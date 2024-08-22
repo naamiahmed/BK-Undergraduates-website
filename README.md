@@ -4,7 +4,7 @@
   <tr>
     <td>
       <img src ="https://github.com/user-attachments/assets/cf19af60-3f52-44ad-bd23-866b1fa1196a" width="100px" height="100px"></td>
-    <td><h1 align="center">Bakinigahawela Undergraduate's Association Website</h1></td>
+    <td><h1 align="center"><b>Bakinigahawela Undergraduate's Association Website</b></h1></td>
   </tr>
 </table> 
 
