@@ -8,7 +8,7 @@
   </tr>
 </table> 
 
-This repository contains the code for the official website of the Bakinigahawela Undergraduate's Association. The website aims to provide information, resources, and updates to association members and the general public.
+<p style = "text-align: center; "> This repository contains the code for the official website of the Bakinigahawela Undergraduate's Association. The website aims to provide information, resources, and updates to association members and the general public.</p>
 
 
 ![BK Undergraduate (FB Cover Photo)](https://github.com/user-attachments/assets/8188450a-75b4-4561-860d-9513e41a9fac)
