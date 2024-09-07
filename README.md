@@ -1,6 +1,14 @@
-# Bakinigahawela Undergraduate's Association Website
 
-This repository contains the code for the official website of the Bakinigahawela Undergraduate's Association. The website aims to provide information, resources, and updates to association members and the general public.
+
+<table>
+  <tr>
+    <td>
+      <img src ="https://github.com/user-attachments/assets/cf19af60-3f52-44ad-bd23-866b1fa1196a" width="100px" height="100px"></td>
+    <td><h1 align="center"><b>Bakinigahawela Undergraduate's Association Website</b></h1></td>
+  </tr>
+</table> 
+
+<p style = "text-align: center; "> This repository contains the code for the official website of the Bakinigahawela Undergraduate's Association. The website aims to provide information, resources, and updates to association members and the general public.</p>
 
 
 ![BK Undergraduate (FB Cover Photo)](https://github.com/user-attachments/assets/8188450a-75b4-4561-860d-9513e41a9fac)
