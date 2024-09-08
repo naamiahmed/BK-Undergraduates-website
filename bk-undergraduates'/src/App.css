@@ -2,15 +2,30 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #1e1e1e;
   color: #fff;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
+
 .navbar ul {
+  position: relative;
   display: flex;
   list-style: none;
   justify-content: space-around;
   background-color: #fcfcfc;
   padding: 1rem;
   background-size: cover;
+}
+
+.navbar-logo {
+  position: absolute; /* Absolute position to overlap the navbar */
+  top: 70%;           /* Center vertically */
+  left: 50%;          /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center perfectly */
+  width: 175px;       /* Fixed width of the logo */
+  height: auto;       /* Maintain aspect ratio */
+  z-index: 10;        /* Ensure logo is above other elements */
 }
   
 .navbar ul li a {
@@ -27,6 +42,18 @@ body {
   margin-top: 3rem;
   margin-bottom: 0rem;
   color: #d4af37;
+  margin-left: 525px;
+  margin-right: 525px;
+}
+.home .para {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  margin-left: 325px;
+  padding-left: 50px;
+  
 }
 
 h2 {
@@ -46,6 +73,12 @@ h2 {
 .footer {
   background-color: #ffffff;
   padding: 1rem;
-  text-align: center;
   color: #000000;
+}
+
+footer .copy {
+  text-align: center;
+}
+.footerLogo{
+text-align: left;
 }

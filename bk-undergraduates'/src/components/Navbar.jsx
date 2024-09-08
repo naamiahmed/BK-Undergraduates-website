@@ -7,9 +7,9 @@ const Navbar = () => {
       <ul>
         <li><a href="#events">Home</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#gallery"><img src="../assets/BKUA_Logo.jpg" alt="Logo" /></a></li>
+        <li><a href="#gallery"><img src="/assets/images/logo.png" alt="Logo" width={200} height={200} className='navbar-logo' /></a></li>
         <li><a href="#team">Events</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#footer">Contact Us</a></li>
       </ul>
     </nav>
   );
