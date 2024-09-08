@@ -6,7 +6,8 @@ const Team = () => {
     <section id="team" className="team">
       <h2>Team</h2>
       <div className="team-cards">
-        {/* Placeholder for team members */}
+
+      
       </div>
     </section>
   );

@@ -8,6 +8,7 @@ import Events from './components/Events';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import Team from './components/Team';
+import ImageSlider from './components/ImageSlider';
 import Footer from './components/Footer';
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
-      <Events />
+      
       <About />
       <Gallery />
       <Team />
+      <ImageSlider />
       <Footer />
     </div>
   );

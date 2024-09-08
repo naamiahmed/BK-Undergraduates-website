@@ -9,7 +9,7 @@ const Home = () => {
 
         </div>
 
-        <div className='para'>
+     <div className='para'>  
             <table>
                 <tr>
                     <td>
@@ -25,9 +25,17 @@ const Home = () => {
                         growth of its students. 
             </p>
                 <td>
-                    <img src="/assets/images/logo.png" alt="Logo" />
-
+                    
                 </td>
+
+                <td>
+                    
+                    </td>
+
+                    <td>
+                    
+                    </td>
+
 
                 </td>
 
@@ -53,15 +61,7 @@ const Home = () => {
 
         </div>
 
-        < div className = "bg" >
-            
-
-             <div className="event-card">
-                <h2>Events</h2>
-                <h3>Techelons</h3>
-                <p>Description of the event goes here...</p>
-            </div>
-      </div>
+        
 
         </div>
         

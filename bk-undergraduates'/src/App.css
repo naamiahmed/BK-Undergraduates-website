@@ -82,3 +82,7 @@ footer .copy {
 .footerLogo{
 text-align: left;
 }
+
+.footer h2{
+  color: #000000;
+}

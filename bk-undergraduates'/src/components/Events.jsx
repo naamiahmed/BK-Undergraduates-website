@@ -5,8 +5,6 @@ const Events = () => {
   return (
     <section id="events" className="events">
 
-      
-
     </section>
   );
 }

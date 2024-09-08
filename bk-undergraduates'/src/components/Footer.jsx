@@ -8,10 +8,10 @@ const Footer = () => {
       <table>
         <tr> 
           <td>
-            <img className='footerLogo' src="../assets/BKUA_Logo.jpg" alt="Logo"  />
+            <img className='footerLogo' src="assets/images/logo.png" alt="Logo" height={200} width={200} />
           </td>
             <td>
-              <h3>Bakinigahawela Undergraduates Association</h3>
+              <h2>Bakinigahawela Undergraduates Association</h2>
             </td>
         </tr>
 
