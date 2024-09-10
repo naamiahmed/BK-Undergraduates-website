@@ -81,3 +81,23 @@
     grid-column: span 1;
     grid-row: span 1;
 }
+
+/* Toggle button styles */
+.toggle-button {
+    display: none;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    .toggle-button {
+        display: inline-block;
+    }
+}

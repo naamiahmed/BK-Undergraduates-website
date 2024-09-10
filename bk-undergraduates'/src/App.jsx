@@ -9,6 +9,7 @@ import Team from './components/Team';
 import ImageSlider from './components/ImageSlider';
 import Footer from './components/Footer';
 import FeedbackForm from './components/FeedbackForm.jsx';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
