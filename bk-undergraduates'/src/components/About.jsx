@@ -5,26 +5,33 @@ const About = () => {
   return (
     <section id="about" className="about">
       <h2>About</h2>
-      <div className="vision">
-        <h3>Vision</h3>
-        <p><p>
-                            The Bakinigahawela Undergraduates Association<br/>
-                            is a student body that is dedicated to the welfare<br/>
-                            and development of the students of the Department of<br/>
-                            Computer Science and Engineering. It was established<br/>
-                            in 2014 and since then has been actively involved in<br/>
-                            organizing various events and activities that cater to<br/>
-                            the academic, social and cultural needs of the students.<br/>
-                            The association is committed to providing a platform<br/>
-                            for students to showcase their talents and skills and<br/>
-                            to foster a sense of community and camaraderie among<br/>
-                            the students. The association is run by a group of<br/>
-                            dedicated students who are elected annually by the<br/>
+      <div >
+        <h3 className="vision">Vision</h3>
+        <hr/>
+        <p>
+                            The Bakinigahawela Undergraduates Association
+                            is a student body that is dedicated to the welfare
+                            and development<br/>
+                             of the students of the Department of
+                            Computer Science and Engineering. It was established
+                            in 2014 and since then has<br/>
+                            been actively involved in
+                            organizing various events and activities that cater to
+                            the academic, social and cultural needs of<br/>
+                            the students.
+                            The association is committed to providing a platform
+                            for students to showcase their talents
+                            and skills<br/> and
+                            to foster a sense of community and camaraderie among
+                            the students.<br/>
+                            The association is run by a group of
+                            dedicated students who are elected annually by the
                             students of the department.
-                        </p></p>
+                        </p>
       </div>
-      <div className="mission">
-        <h3>Mission</h3>
+      <div >
+        <h3 className="mission">Mission</h3>
+        <hr/>
         <p> The association organizes a variety of events and<br/>
                             activities throughout the year, including workshops,<br/>
                             seminars, hackathons, coding competitions, cultural<br/>

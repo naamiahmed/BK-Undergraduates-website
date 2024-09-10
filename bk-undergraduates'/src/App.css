@@ -58,13 +58,56 @@ body {
   padding-left: 50px;
 }
 
+.home .social-media {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.home .social-media a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.home .social-media a:hover {
+  color: #d4af37; /* Gold-like color */}
+
 h2 {
   color: #d4af37;
   font-size: 2.5rem;
 }
 
+.about{
+  text-align: center;
+}
+
+.about .vision {
+  color: #d4af37;
+  font-size: 2rem;
+  text-align: left;
+}
+.vision, hr {
+  width: 50%;  /* Adjust width as needed */
+  margin: 10px ; /* Centers the hr */
+}
+
+.about .vision, p{
+  text-align: left;
+}
+
+.about .mission {
+  color: #d4af37;
+  font-size: 2rem;
+  text-align: center;
+}
+.mission, hr {
+  width: 50%;  /* Adjust width as needed */
+  margin: 10px , auto ; /* Centers the hr */
+}
+
+
 .events, .about, .gallery, .team {
-  padding: 4rem 2rem;
   text-align: center;
 }
 
