@@ -8,7 +8,7 @@ const About = () => {
       <div >
         <h3 className="vision">Vision</h3>
         <hr/>
-        <p>
+        <p className='p1'>
                             The Bakinigahawela Undergraduates Association
                             is a student body that is dedicated to the welfare
                             and development<br/>
@@ -31,21 +31,21 @@ const About = () => {
       </div>
       <div >
         <h3 className="mission">Mission</h3>
-        <hr/>
-        <p> The association organizes a variety of events and<br/>
-                            activities throughout the year, including workshops,<br/>
-                            seminars, hackathons, coding competitions, cultural<br/>
-                            events, sports events, and social events. The<br/>
-                            association also provides a platform for students to<br/>
-                            participate in various competitions and events<br/>
-                            organized by other universities and institutions.<br/>
-                            The association also works closely with the faculty<br/>
-                            and staff of the department to address the needs and<br/>
-                            concerns of the students and to provide support and<br/>
-                            guidance to the students. The association is committed<br/>
-                            to promoting the academic and personal development of<br/>
-                            the students and to creating a vibrant and inclusive<br/>
-                            community within the department.</p>
+        <hr  className='hr'/>
+        <p className='p2'> The association organizes a variety of events and
+            activities throughout the year, including workshops,seminars, hackathons, coding competitions, cultural
+            events, sports events, and social events. The
+            association also provides a platform for students to
+            participate in various competitions and events
+            organized by other universities and institutions.
+            The association also works closely with the faculty
+            and staff of the department to address the needs and
+            concerns of the students and to provide support and
+            guidance to the students. The association is committed
+            to promoting the academic and personal development of
+            the students and to creating a vibrant and inclusive
+            community within the department.
+         </p>
       </div>
     </section>
   );
