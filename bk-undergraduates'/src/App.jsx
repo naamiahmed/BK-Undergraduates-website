@@ -24,7 +24,7 @@ function App() {
         <Team />  
         <ImageSlider />
         <FeedbackForm />
-          <Routes>
+        <Routes>
           <Route path="/registration" element={<RegistrationPage />} />
         </Routes>
         <Footer />
