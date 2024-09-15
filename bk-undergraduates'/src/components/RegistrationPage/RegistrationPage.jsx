@@ -5,124 +5,56 @@ import './RegistrationPage.css';
 
 const RegistrationPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    nameWithInitials: '',
     email: '',
-    whatsapp: '',
+    whatsappNumber: '',
     birthDate: '',
     olBatch: '',
     alBatch: '',
-    university: '',
-    courseName: ''
+    universityName: '',
+    universityCourse: '',
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
+    setFormData({
+      ...formData,
       [name]: value,
-    }));
+    });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here, handle the form submission logic (e.g., send data to a backend or Firebase)
-    alert('You will receive your Member ID via email and WhatsApp if provided.');
+
+    try {
+      const response = await fetch('http://localhost:5000/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      alert(data.message);
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Registration failed.');
+    }
   };
 
   return (
-    <div className="registration-page">
-      <h2>New Member Registration</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Name with Initials:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div>
-          <label>WhatsApp Number (Optional):</label>
-          <input
-            type="text"
-            name="whatsapp"
-            value={formData.whatsapp}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div>
-          <label>Birth Date:</label>
-          <input
-            type="date"
-            name="birthDate"
-            value={formData.birthDate}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div>
-          <label>O/L Batch:</label>
-          <input
-            type="text"
-            name="olBatch"
-            value={formData.olBatch}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div>
-          <label>A/L Batch (1st Attempt):</label>
-          <input
-            type="text"
-            name="alBatch"
-            value={formData.alBatch}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div>
-          <label>University Name:</label>
-          <input
-            type="text"
-            name="university"
-            value={formData.university}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div>
-          <label>University Course Name:</label>
-          <input
-            type="text"
-            name="courseName"
-            value={formData.courseName}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <input type="text" name="nameWithInitials" placeholder="Name with Initials" onChange={handleChange} required />
+      <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
+      <input type="text" name="whatsappNumber" placeholder="WhatsApp Number (Optional)" onChange={handleChange} />
+      <input type="date" name="birthDate" onChange={handleChange} required />
+      <input type="text" name="olBatch" placeholder="O/L Batch" onChange={handleChange} required />
+      <input type="text" name="alBatch" placeholder="A/L Batch (1st Attempt)" onChange={handleChange} required />
+      <input type="text" name="universityName" placeholder="University Name" onChange={handleChange} required />
+      <input type="text" name="universityCourse" placeholder="University Course" onChange={handleChange} required />
+      <button type="submit">Submit</button>
+    </form>
   );
 };
 
