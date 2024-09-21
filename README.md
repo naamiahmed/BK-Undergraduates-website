@@ -23,9 +23,9 @@
 
 ## Technologies Used
 
-- **Frontend:** React.js (built with Vite)
-- **Backend:** Firebase
-- **Hosting:** Firebase Hosting
+-   **Frontend:** React.js (built with Vite)
+-   **Backend:** Firebase
+-   **Hosting:** Firebase Hosting
 
 ## Project Structure
 
