@@ -2,7 +2,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import registrationRoutes from './routes/RegistrationRoutes.js'; // .js extension required in ES modules
+import registrationRoutes from './routes/registration.js'; // .js extension required in ES modules
 
 // Create the Express app
 const app = express();
@@ -22,6 +22,7 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 app.use('/api', registrationRoutes);
 
 // Start the server
+// eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
