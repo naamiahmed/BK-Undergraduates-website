@@ -13,7 +13,6 @@ const Navbar = () => {
         <li><Link to="/gallery"><img src="/assets/images/logo.png" alt="Logo" width={200} height={200} className='navbar-logo' /></Link></li>
         <li><Link to="/team">Events</Link></li>
         <li><Link to="/footer">Contact Us</Link></li>
-        {/* <li><Link to="/registration">Registration</Link></li> */}
       </ul>
     </nav>
   );
