@@ -2,6 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import './FeedbackForm.css'; // CSS file for styling the form
+import './responsive.css';
 
 const FeedbackForm = () => {
   const [formData, setFormData] = useState({

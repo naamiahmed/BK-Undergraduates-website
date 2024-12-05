@@ -3,6 +3,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import './Gallery.css'; // CSS file for styling the grid
+import './responsive.css';
 
 const Gallery = () => {
   const [showMore, setShowMore] = useState(false);

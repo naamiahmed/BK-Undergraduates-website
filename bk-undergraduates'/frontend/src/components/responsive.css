@@ -1,0 +1,131 @@
+/* Responsive styles for mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-logo {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .home .para {
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .events, .about, .gallery, .team {
+    padding: 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns */
+  }
+
+  .grid-item img {
+    object-fit: cover;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback-form {
+    padding: 1rem;
+  }
+}
+
+/* Tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar ul {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+
+  .navbar-logo {
+    width: 120px;
+  }
+
+  .home h1 {
+    font-size: 3rem;
+    margin: 0 50px;
+  }
+
+  .home .para {
+    font-size: 1rem;
+    margin: 0 50px;
+    text-align: justify;
+  }
+
+  .events, .about, .gallery, .team {
+    padding: 2rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr); /* Adjust grid layout */
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .feedback-form {
+    padding: 1.5rem;
+  }
+}
+
+/* Desktops (1025px and above) */
+@media (min-width: 1025px) {
+  .navbar ul {
+    justify-content: space-around;
+  }
+
+  .navbar-logo {
+    width: 150px;
+  }
+
+  .home h1 {
+    font-size: 4rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .home .para {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 900px;
+  }
+
+  .events, .about, .gallery, .team {
+    padding: 4rem 3rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .feedback-form {
+    padding: 2rem;
+  }
+}
