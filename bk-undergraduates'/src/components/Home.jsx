@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className="home">
         <div>
-            <h1>Bakinigahawela <br/> Undergraduates <br/> Association</h1>
+            <h1> Bakinigahawela <br/> Undergraduates <br/> Association</h1>
 
         </div>
 
