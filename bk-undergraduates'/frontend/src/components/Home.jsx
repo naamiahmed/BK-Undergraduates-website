@@ -17,44 +17,6 @@ const Home = () => {
         <a href="mailto:bkundergraduates@gmail.com"><i className="fas fa-envelope"></i></a>
       </div>
 
-     <div className='para'>  
-            <table>
-                <tr>
-                    <td>
-                         <p>
-
-                         </p>
-                           
-                <td>
-                    
-                </td>
-
-                <td>
-                    
-                    </td>
-
-                    <td>
-                    
-                    </td>
-
-
-                </td>
-
-                <td>
-                        <p>
-                           
-                            </p>
-                    </td>
-                </tr>
-
-
-            </table>
-           
-
-        </div>
-
-        
-
         </div>
         
     );
