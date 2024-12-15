@@ -16,10 +16,10 @@ function App() {
       <main>
         <Hero />
         <About />
-        <NewsEvents />
+        {/* <NewsEvents /> */}
         <Gallery />
         <Members />
-        <JoinUs />
+        {/* <JoinUs /> */}
         <Contact />
       </main>
       <Footer />

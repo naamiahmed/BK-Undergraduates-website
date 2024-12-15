@@ -1,123 +1,84 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Facebook, Twitter, Instagram } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+    <section id="contact" className="py-20 bg-gradient-to-br from-indigo-50 to-white">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Contact Us</h2>
           <p className="mt-4 text-lg text-gray-600">Get in touch with our team</p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Contact Information</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <MapPin className="h-6 w-6 text-indigo-600 mr-3" />
-                  <span className="text-gray-600">123 University Street, Bakinigahawela</span>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="h-6 w-6 text-indigo-600 mr-3" />
-                  <span className="text-gray-600">+94 123 456 789</span>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="h-6 w-6 text-indigo-600 mr-3" />
-                  <span className="text-gray-600">info@bua.edu</span>
-                </div>
-              </div>
-            </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="backdrop-blur-lg bg-white/30 p-8 rounded-2xl shadow-xl border border-white/20"
+          style={{
+            background: 'rgba(255, 255, 255, 0.2)',
+            boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)'
+          }}
+        >
+          <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Send us a Message</h3>
+          <form className="space-y-6">
+            <motion.div
+              whileHover={{ scale: 1.01 }}
+              transition={{ duration: 0.2 }}
+            >
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                className="mt-1 block w-full rounded-lg border-gray-200 bg-white/50 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 transition-all duration-200"
+              />
+            </motion.div>
+            
+            <motion.div
+              whileHover={{ scale: 1.01 }}
+              transition={{ duration: 0.2 }}
+            >
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                className="mt-1 block w-full rounded-lg border-gray-200 bg-white/50 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 transition-all duration-200"
+              />
+            </motion.div>
 
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Follow Us</h3>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-indigo-600 transition-colors">
-                  <Facebook className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-indigo-600 transition-colors">
-                  <Twitter className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-indigo-600 transition-colors">
-                  <Instagram className="h-6 w-6" />
-                </a>
-              </div>
-            </div>
+            <motion.div
+              whileHover={{ scale: 1.01 }}
+              transition={{ duration: 0.2 }}
+            >
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                Message
+              </label>
+              <textarea
+                id="message"
+                rows={4}
+                className="mt-1 block w-full rounded-lg border-gray-200 bg-white/50 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 transition-all duration-200"
+              />
+            </motion.div>
 
-            {/* Newsletter Signup */}
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Subscribe to Our Newsletter</h3>
-              <form className="flex gap-2">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                />
-                <button
-                  type="submit"
-                  className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">Send us a Message</h3>
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                />
-              </div>
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              type="submit"
+              className="w-full inline-flex justify-center rounded-lg border border-transparent bg-indigo-600 py-3 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-200"
+            >
+              Send Message
+            </motion.button>
+          </form>
+        </motion.div>
       </div>
     </section>
   );

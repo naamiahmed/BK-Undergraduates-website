@@ -7,10 +7,10 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'News', href: '#news' },
+    // { name: 'News', href: '#news' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Members', href: '#members' },
-    { name: 'Join Us', href: '#join' },
+    // { name: 'Join Us', href: '#join' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <GraduationCap className="h-8 w-8 text-indigo-600" />
-            <span className="ml-2 text-xl font-bold text-gray-800">BUA</span>
+            <span className="ml-2 text-xl font-bold text-gray-800">Bakinigahawela Undergraduates' Association</span>
           </div>
           
           {/* Desktop Menu */}
