@@ -2,10 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import NewsEvents from './components/NewsEvents';
 import Gallery from './components/Gallery';
 import Members from './components/Members';
-import JoinUs from './components/JoinUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
