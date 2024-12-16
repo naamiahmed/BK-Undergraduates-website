@@ -6,20 +6,20 @@ const Gallery = () => {
 
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Annual Meeting 2023"
+      url: "src/assets/ICT-Campign.jpg",
+      title: "ICT-Campign 2023"
     },
     {
-      url: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Leadership Workshop"
+      url: "src/assets/January Meetup.jpg",
+      title: "January Meetup"
     },
     {
-      url: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Community Service"
+      url: "src/assets/Freshers Welcome.png",
+      title: "Freshers Welcome"
     },
     {
-      url: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      title: "Sports Event"
+      url: "src/assets/Meetup.png",
+      title: "Members Meetup"
     },
     {
       url: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",

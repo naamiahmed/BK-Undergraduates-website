@@ -1,8 +1,23 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+
+interface SocialLinks {
+  email: string;
+  linkedin: string;
+  github: string;
+  Phone?: string;
+}
+
+interface Member {
+  name: string;
+  role: string;
+  image: string;
+  bio: string;
+  social: SocialLinks;
+}
 
 const Members = () => {
-  const members = [
+  const members: Member[] = [
     {
       name: "Sarah Johnson",
       role: "President",
@@ -11,18 +26,20 @@ const Members = () => {
       social: {
         email: "mailto:sarah@example.com",
         linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        github: "https://github.com",
+        Phone: "https://wa.me/1234567890"
       }
     },
     {
-      name: "Michael Chen",
+      name: "Naami Ahmed",
       role: "Vice President",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      bio: "Engineering student with a focus on sustainable development and innovation.",
+      image: "src/assets/Naami.jpg",
+      bio: "Final year IT student passionate about technology and community building with a focus on sustainable development and innovation.",
       social: {
-        email: "mailto:michael@example.com",
-        linkedin: "https://linkedin.com",
-        github: "https://github.com"
+        email: "mailto:naamisaleem5002@gmail.com",
+        linkedin: "https://www.linkedin.com/in/naami-ahmed/",
+        github: "https://github.com/naamiahmed",
+        Phone: "https://wa.me/94702652676"
       }
     },
     {
@@ -59,16 +76,9 @@ const Members = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {members.map((member, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            >
+            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="relative group">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-64 object-cover"
-                />
+                <img src={member.image} alt={member.name} className="w-full h-64 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="p-6">
@@ -79,21 +89,37 @@ const Members = () => {
                   <a
                     href={member.social.email}
                     className="text-gray-400 hover:text-indigo-600 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Mail className="h-5 w-5" />
                   </a>
                   <a
                     href={member.social.linkedin}
                     className="text-gray-400 hover:text-indigo-600 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
                     href={member.social.github}
                     className="text-gray-400 hover:text-indigo-600 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Github className="h-5 w-5" />
                   </a>
+                  {member.social.Phone && (
+                    <a
+                      href={member.social.Phone}
+                      className="text-gray-400 hover:text-indigo-600 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Phone className="h-5 w-5" />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

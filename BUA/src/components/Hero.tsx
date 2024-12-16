@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen flex items-center">
+    <div id="hero"className="relative min-h-screen flex items-center">
       {/* Background with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
