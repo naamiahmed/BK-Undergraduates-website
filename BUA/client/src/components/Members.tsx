@@ -33,7 +33,7 @@ const Members = () => {
     {
       name: "Naami Ahmed",
       role: "Vice President",
-      image: "src/assets/Naami.jpg",
+      image: "src/public/assets/Naami.jpg",
       bio: "Final year IT student passionate about technology and community building with a focus on sustainable development and innovation.",
       social: {
         email: "mailto:naamisaleem5002@gmail.com",

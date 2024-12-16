@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone } from 'lucide-react';
+import "../public/assets/BK UA Logo.png";
 
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center">
-              <img src="/src/assets/BK UA Logo.png" alt="BUA Logo" className="h-12 w-auto object-contain" />
+              <img src="/src/public/assets/BK UA Logo.png" alt="BUA Logo" className="h-12 w-auto object-contain" />
               <span className="ml-2 text-xl font-bold">BUA</span>
             </div>
             <p className="text-gray-400">
