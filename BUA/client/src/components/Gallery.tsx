@@ -6,19 +6,19 @@ const Gallery = () => {
 
   const images = [
     {
-      url: "src/public/assets/ICT-Campign.jpg",
+      url: "./assets/ICT-Campign.jpg",
       title: "ICT-Campign 2023"
     },
     {
-      url: "src/public/assets/January Meetup.jpg",
+      url: "./assets/January Meetup.jpg",
       title: "January Meetup"
     },
     {
-      url: "src/public/assets/Freshers Welcome.png",
+      url: "./assets/Freshers Welcome.png",
       title: "Freshers Welcome"
     },
     {
-      url: "src/public/assets/Meetup.png",
+      url: "./assets/Meetup.png",
       title: "Members Meetup"
     },
     {

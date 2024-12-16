@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Phone } from 'lucide-react';
-import "../public/assets/BK UA Logo.png";
+import "../../public/assets/BK UA Logo.png";
 
 
 const Footer = () => {
@@ -70,5 +70,6 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 export default Footer;

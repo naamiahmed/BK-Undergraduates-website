@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import  mockData  from '../public/assets/mock.json';
+import  mockData  from '../../public/assets/mock.json';
 
 export interface NavigationItem {
   name: string;
@@ -68,7 +68,7 @@ const Navbar = () => {
         whileHover={{ scale: 1.02 }}
         >
         <motion.img 
-          src="/src/public/assets/BK UA Logo.png" 
+          src="./assets/BK UA Logo.png" 
           alt="BUA Logo" 
           className="h-12 w-auto sm:h-12" 
           initial={{ opacity: 0 }}
