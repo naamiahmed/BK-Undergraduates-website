@@ -1,0 +1,13 @@
+{
+  "association": {
+    "name": "Bakinigahawela Undergraduates' Association",
+    "logo": "/src/assets/BK UA Logo.png"
+  },
+  "navigation": [
+    { "name": "Home", "href": "#home" },
+    { "name": "About", "href": "#about" },
+    { "name": "Gallery", "href": "#gallery" },
+    { "name": "Members", "href": "#members" },
+    { "name": "Contact", "href": "#contact" }
+  ]
+}
